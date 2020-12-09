@@ -58,6 +58,7 @@ import com.hind.stars.service.StarService;
 		modelMap.addAttribute("stars", stars);
 		modelMap.addAttribute("pages", new int[stars.getTotalPages()]);
 		modelMap.addAttribute("currentPage", page);
+		modelMap.addAttribute("size" , size) ;
 		return "listeStars";
 		}
 		
@@ -96,7 +97,6 @@ import com.hind.stars.service.StarService;
 			modelMap.addAttribute("stars", stars);
 			return "listeStars";
 			}
-		//comment
 	}
 
 

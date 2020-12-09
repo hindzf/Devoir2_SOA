@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorator="template">
 <link rel="stylesheet" type="text/css"
 href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
 <c:url value="/css/main.css" var="jstlCss" />
@@ -13,6 +15,7 @@ src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+<div layout:fragment="Mycontent">
 <div class="container">
 <div class="card-body">
 <form action="saveStar" method="post">
@@ -36,6 +39,7 @@ src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <br/>
 <br/>
 <a href="ListeStars">Liste Stars</a>
+</div>
 </div>
 </body>
 </html>
